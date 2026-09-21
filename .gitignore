@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+# Capturas anteriores que ya no forman parte del portfolio
+assets/gamescope.png
+assets/freshstyle.png
+assets/tienda-chatbot.png

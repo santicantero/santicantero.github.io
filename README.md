@@ -2,7 +2,7 @@
 
 ### Desarrollador full stack · Automatización de procesos · Inteligencia artificial
 
-¡Hola! Soy Santiago. Creo proyectos digitales donde el desarrollo, el diseño y la experiencia de usuario trabajan juntos. Me gusta transformar ideas en soluciones útiles, cuidar cada detalle de la interfaz y explorar cómo la inteligencia artificial y las automatizaciones pueden simplificar el trabajo de las personas.
+¡Hola! Soy Santiago. Creo proyectos digitales donde el desarrollo, el diseño y la experiencia de usuario trabajan juntos. Me gusta transformar ideas en soluciones útiles, cuidar cada detalle de la interfaz y explorar cómo la inteligencia artificial y las automatizaciones pueden simplificar el trabajo de las personas. Disfruto trabajando en equipo y conectando con los clientes: escuchar, entender sus necesidades y traducirlas en experiencias digitales claras. Apuesto por un diseño limpio y sencillo, donde cada detalle tiene un propósito.
 
 Este es mi portfolio personal: una selección de lo que construyo, cómo trabajo y las tecnologías que utilizo.
 

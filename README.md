@@ -36,6 +36,7 @@ Estoy abierto a oportunidades en las que aportar, seguir aprendiendo y construir
 
 - **Portfolio:** [santicantero.github.io](https://santicantero.github.io/)
 - **GitHub:** [@santicantero](https://github.com/santicantero)
+- **LinkedIn:** [Santiago Cantero Torrents](https://www.linkedin.com/in/santiago-cantero-torrents-43a609280/)
 - **Email:** [santiagocanterotorrents@gmail.com](mailto:santiagocanterotorrents@gmail.com)
 
 ---

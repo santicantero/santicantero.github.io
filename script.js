@@ -29,3 +29,23 @@ copyButton.addEventListener('click', async () => {
   }
   resetStatus = setTimeout(() => { copyStatus.textContent = ''; }, 6000);
 });
+
+// Decorative sequence: the underlying example remains readable when paused.
+const workflow = document.querySelector('.workflow-art');
+const workflowToggle = document.querySelector('.workflow-toggle');
+if (workflow && workflowToggle) {
+  let pausedByUser = false;
+  function syncWorkflowMotion() {
+    const paused = pausedByUser || reducedMotion.matches;
+    workflow.classList.toggle('is-paused', paused);
+    workflowToggle.hidden = reducedMotion.matches;
+    workflowToggle.setAttribute('aria-pressed', String(pausedByUser));
+    workflowToggle.textContent = pausedByUser ? 'Reanudar animación' : 'Pausar animación';
+  }
+  workflowToggle.addEventListener('click', () => {
+    pausedByUser = !pausedByUser;
+    syncWorkflowMotion();
+  });
+  reducedMotion.addEventListener('change', syncWorkflowMotion);
+  syncWorkflowMotion();
+}

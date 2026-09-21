@@ -22,3 +22,30 @@
 
 .n8n{color:#c45b70}.n8n svg{display:block;width:36px;height:36px}.intro p{max-width:510px;text-wrap:pretty}
 @media(min-width:701px){.tech:last-child:nth-child(3n + 1){grid-column:1/-1}}
+
+/* A readable automation sequence replaces the abstract hero ornament. */
+.workflow-art{display:flex;flex-direction:column;justify-content:center;min-height:680px;padding:32px 30px;background:radial-gradient(ellipse at 65% 40%,#e4ebd6,transparent 70%),#eceee5;border:1px solid #e0e4d5;border-radius:12px}
+.workflow-heading,.workflow-steps,.workflow-footer{position:relative;z-index:1}
+.workflow-heading .eyebrow{font-size:8px;letter-spacing:1px;margin-bottom:17px;line-height:1.7}
+.workflow-heading h2{font-size:32px;line-height:1.12;letter-spacing:-1px;margin-bottom:12px}
+.workflow-caption{font-size:11px;line-height:1.6;color:var(--muted);margin-bottom:25px;max-width:320px}
+.workflow-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:21px}
+.workflow-step{position:relative;display:flex;align-items:center;gap:14px;padding:13px 14px;border:1px solid #d7ddcb;background:#f8f9f4;border-radius:10px;box-shadow:0 4px 12px #434e2210;animation:workflow-node 12s ease-in-out infinite;animation-delay:calc(var(--step)*2s)}
+.workflow-step:not(:last-child):after{content:'';position:absolute;left:31px;top:100%;width:2px;height:22px;background:linear-gradient(#a5b68a,#ccd4c0);animation:workflow-wire 12s linear infinite;animation-delay:calc(var(--step)*2s + 1s)}
+.workflow-icon{display:grid;place-items:center;width:35px;height:35px;flex-shrink:0;border-radius:9px;background:#e9eddf;color:#63763e}
+.workflow-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.workflow-label{display:block;font-size:7px;font-weight:650;letter-spacing:1px;color:#707963;margin-bottom:5px}
+.workflow-step h3{font-family:'DM Sans',sans-serif;font-size:12px;line-height:1.3;font-weight:650;margin:0 0 4px;letter-spacing:-.15px}
+.workflow-step p{font-size:10px;line-height:1.5;margin:0;color:#69705f}
+.workflow-marker{width:6px;height:6px;border:1px solid #acb69a;border-radius:50%;margin-left:auto;flex-shrink:0;background:#e0e6d5;animation:workflow-dot 12s ease-in-out infinite;animation-delay:calc(var(--step)*2s)}
+.workflow-ai{background:#edf4dd;border-color:#c4d5a2}.workflow-ai .workflow-icon{background:var(--lime);color:#425329}
+.workflow-footer{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;padding-top:21px;margin-top:22px;border-top:1px solid #cfd6c2}
+.workflow-footer a{font-size:10px;font-weight:550}.workflow-footer a:hover{color:#536f1b}.workflow-footer a span{margin-left:8px}
+.workflow-toggle{font-size:9px;color:#626b55;border:0;border-bottom:1px solid #9aa58a;background:transparent;padding:5px 0;cursor:pointer}
+.workflow-art.is-paused *,.workflow-art.is-paused *:after{animation-play-state:paused!important}
+@keyframes workflow-node{0%,18%,100%{border-color:#d7ddcb;box-shadow:0 4px 12px #434e2210;transform:none}3%,13%{border-color:#91ad55;box-shadow:0 0 0 3px #c8eaa238,0 5px 16px #434e2212;transform:translateX(3px)}}
+@keyframes workflow-dot{0%,18%,100%{background:#e0e6d5;border-color:#acb69a}3%,13%{background:#86a741;border-color:#779338}}
+@keyframes workflow-wire{0%,18%,100%{background:#ccd4c0}3%,12%{background:#90ae55}}
+@media(max-width:1050px){.workflow-art{padding:25px 20px;min-height:660px}.workflow-heading h2{font-size:29px}.workflow-step{gap:10px;padding:12px}.workflow-step:not(:last-child):after{left:29px}.workflow-step h3{font-size:11px}.workflow-step p{font-size:9px}.workflow-label{font-size:6.5px;letter-spacing:.7px}}
+@media(max-width:700px){.workflow-art{min-height:0;padding:27px 20px}.workflow-heading h2{font-size:32px}.workflow-caption{font-size:12px}.workflow-heading .eyebrow{font-size:7px}.workflow-step{padding:14px 12px}.workflow-step h3{font-size:12px}.workflow-step p{font-size:10px}.workflow-label{font-size:7px}.workflow-footer a{font-size:11px}.workflow-toggle{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.workflow-step,.workflow-marker,.workflow-step:after{animation:none!important}.workflow-toggle{display:none}}
